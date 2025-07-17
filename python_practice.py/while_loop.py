@@ -34,16 +34,16 @@ else:
 #using while loop check string is palindrom or not
 #reverse a num without convrting onto string using while loop
 
-# str1=input("Enter string name : ")
-# value=len(str1)-1
-# list=""
-# while value!=-1:
-#     list+=str1[value]
-#     value -=1
-# if str1==list:
-#     print("palindrome")   
-# else:
-#     print("not palindrome")
+str1=input("Enter string name : ")
+value=len(str1)-1
+list=""
+while value!=-1:
+    list+=str1[value]
+    value -=1
+if str1==list:
+    print("palindrome")   
+else:
+    print("not palindrome")
 
 
 
