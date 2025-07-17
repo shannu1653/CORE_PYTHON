@@ -95,8 +95,11 @@ def armstrong(number):
         return True
     else:
         return False
+
 op=[x for x in range(100,1000) if armstrong(x)]
 print(f"Armstrong numbers from range(100,1000) are {op}")
+
+
 
 
 
