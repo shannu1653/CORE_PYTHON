@@ -45,7 +45,7 @@
 #     else:
 #         return False
 # list=['kiran','harish','harish','shannu']
-# op=[x.upper()  for x in list if vowel(x)]
+# op=[x.upper()  for x in list if vowel(x) ]
 # print(op)
 
 # num=28
@@ -77,27 +77,40 @@
 #do research how to generate tuple comprehension
 
 
-#armstrong number
-def armstrong(number):
-    number2=number
-    count=0
-    while (number>0):
-     num=number%10
-     count+=1
-     number=number//10
-    temp=number2
-    count2=0
-    while number2>0:
-     num=number2%10
-     count2+=num**count
-     number2=number2//10 
-    if count2==temp:
-        return True
-    else:
-        return False
+# #armstrong number
+# def armstrong(number):
+#     number2=number
+#     count=0
+#     while (number>0):
+#      num=number%10
+#      count+=1
+#      number=number//10
+#     temp=number2
+#     count2=0
+#     while number2>0:
+#      num=number2%10
+#      count2+=num**count
+#      number2=number2//10 
+#     if count2==temp:
+#         return True
+#     else:
+#         return False
 
-op=[x for x in range(100,1000) if armstrong(x)]
-print(f"Armstrong numbers from range(100,1000) are {op}")
+# op=[x for x in range(100,1000) if armstrong(x)]
+# print(f"Armstrong numbers from range(100,1000) are {op}")
+
+
+for i in range(11,10001):
+    j=i
+    count=0
+    count2=1
+    while j>0:
+        temp =j%10
+        count+=temp
+        count2 =count2*temp
+        j=j//10
+    if count ==count2:
+        print(i)
 
 
 
