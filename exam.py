@@ -89,12 +89,13 @@
 
 # name="sraaavan"
 # name2=''
+# count=-1
 # for i in name:
-#     # name2+=i
-#     if i*i is name2 :
+#     if name2[count] ==name2[count+1] :
 #         continue
 #     else:
 #         name2+=i
+#     count+=1
 # print(name2)
 
 # s='sraaavan'
@@ -111,11 +112,11 @@
 # print(res)
 
 
-amount=100
-total_choclets=amount
-w=amount
-while w>=3:
-    e=w//3
-    total_choclets+=e
-    w=e+e%3
-print(total_choclets)
+# amount=100
+# total_choclets=amount
+# w=amount
+# while w>=3:
+#     e=w//3
+#     total_choclets+=e
+#     w=e+e%3
+# print(total_choclets)
