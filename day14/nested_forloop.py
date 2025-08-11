@@ -14,3 +14,4 @@ def nested(num):
     return list
 op=[x for x in nested(['shannu','naveen','sathish','tharun','akhil'])]
 print(op)
+
