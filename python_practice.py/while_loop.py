@@ -100,13 +100,13 @@ print(new_dict)
 
 
 # #fibonccci series
-# number=int(input('Enter a number : '))
-# a=0
-# b=1
-# count=0
-# while(count<number):
-#     print(a," ",end='')
-#     temp=a+b
-#     a=b
-#     b=temp
-#     count+=1
+number=int(input('Enter a number : '))
+a=0
+b=1
+count=0
+while(count<number):
+    print(a," ")
+    temp=a+b
+    a=b
+    b=temp
+    count+=1
