@@ -49,12 +49,12 @@
 # value=square_num**0.5
 # print(f"{square_num} is a perect Squre" if value==int(value) else "not a perfect Suare")
 
-# members=int(input("Members count : "))
-# if members % 5==0:
-#     cars=members//5
-# else:
-#     cars = (members + 4)//5
-# print(f"{cars} cars needed")
+members=int(input("Members count : "))
+if members % 5==0:
+    cars=members//5
+else:
+    cars = (members + 4)//5
+print(f"{cars} cars needed")
 
 # a,b,c=int(input("Enter number1 : ")),int(input("Enter number2 : ")),int(input("Enter number3 : "))
 # if (a<=b and a>=c or a<=c and a>=b) :
@@ -79,7 +79,7 @@
 # else:
 #     print(f"{year} is not a leap year")
 
-st=10
-while st<20:
-    print("hi")
-    st+=1
+# st=10
+# while st<20:
+#     print("hi")
+#     st+=1
