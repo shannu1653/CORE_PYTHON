@@ -33,3 +33,7 @@ print(5,"5")
 
 name='shannu'
 print(isinstance(name, int)) #it checks data type gives boolean value
+
+a=isinstance(name,str)
+print(1+a)
+

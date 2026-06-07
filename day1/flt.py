@@ -1,4 +1,4 @@
-#float-a float is a data type  is used to store decimal(fractional) numbers
+'''#float-a float is a data type  is used to store decimal(fractional) numbers
 x=0.5
 z=10.5
 m=0.0
@@ -58,6 +58,7 @@ print(0.1 + 0.2 == 0.3)  #it gives False Due to Precsion
 import math
 print(math.isclose(0.1+0.2,0.3))#***********imp
 
+
 #FLOAT TO FRACTION
 print((0.5).as_integer_ratio())
 print((100.50).as_integer_ratio())
@@ -67,3 +68,33 @@ print((5.0).is_integer()) #it gives true
 print((5.5).is_integer()) #it gives False
 
 #******hex() and fromhex() is used to low level debugging currenetly not mandatory
+
+
+'''
+
+#give second largest
+arr=[2,4,5,61,113,90]
+first=second=float('-inf')
+for i in arr:
+    if i > first:
+        second = first
+        first = i       
+    elif i > second:
+        second = i
+print(second)
+
+
+#third largest
+arr=[2,4,5,61,113,90]
+first=second=third=float('-inf')
+for i in arr:
+    if i > first:
+        third = second
+        second = first
+        first = i
+    elif i > second:
+        third = second
+        second = i
+    elif i > third:
+        third = i
+print(third)
