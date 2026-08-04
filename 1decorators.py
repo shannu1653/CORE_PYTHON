@@ -40,4 +40,20 @@ def cal_excution_time(func):
 def work():
     time.sleep(2)
 work()
-    
+
+#4.Create a decorator that counts how many times a function is called.
+def count_func_time(func):
+    count=0
+    def wrapper():
+        nonlocal count
+        func()
+        count +=1
+        print(f"Funnction called {count} times")
+    return wrapper
+@count_func_time
+def sample():
+    print("Hello")
+sample()
+sample()
+sample()
+
