@@ -73,3 +73,20 @@ def add():
 
 greet()
 add()
+
+#Problem #6**********: Create a decorator that only allows a function to run if the user is "admin".************
+def admin_only(func):
+    def wrapper(user):
+        if user=="admin":
+            print("Access Granted")
+            func(user)
+        else:
+            print("Access Denied")
+    return wrapper
+
+@admin_only
+def delete_user(user):
+    print(f"{user} deleted a user")
+delete_user("admin")
+print()
+delete_user("shanmukha")
