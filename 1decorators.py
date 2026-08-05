@@ -57,3 +57,19 @@ sample()
 sample()
 sample()
 
+#5.Create a decorator that logs the function name before execution.
+def function_log(func):
+    def wrapper():
+        print(f"Calling fucntion : {func.__name__}")
+        func()
+    return wrapper
+@function_log
+def greet():
+    print("Hello")
+
+@function_log
+def add():
+    print(5+5)
+
+greet()
+add()
